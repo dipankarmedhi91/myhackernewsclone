@@ -1,0 +1,75 @@
+@import "variables";
+@import "header";
+@import "footer";
+@import "content";
+
+body {
+    font-family:'Times New Roman', Times, serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    &:visited{
+       color: $darkgrey; 
+    }
+}
+
+#mainCenteredPanel {
+    min-width: 796px;
+    width: 100%;
+    height: 100%;
+
+    footer,
+    > section,
+    > div,
+    header {
+        width: 85%;
+        padding: 2px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer,
+    > div,
+    > section {
+        background-color: #f6f6ef;
+    }
+
+    > div {
+        button {
+            border: none;
+            background-color: inherit;
+            color: blue;
+            cursor: pointer;
+        }
+        button:active,
+        button:focus,
+        button:focus:active {
+            background-image: none;
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+
+    .loadingSpinner {
+        border: 5px solid $lightgrey;
+        border-top: 5px solid $hncolor;
+        border-bottom: 5px solid $hncolor;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}

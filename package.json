@@ -1,0 +1,28 @@
+{
+  "name": "myhackernewsclone",
+  "version": "1.0.0",
+  "description": "A hacker News clone using vanilla JS",
+  "main": "index.js",
+  "scripts": {
+    "build": "watchify -d -t sassify main.js -o bundle.js -v",
+    "buildProd": "browserify -t sassify -p tinyify main.js -o bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dipankarmedhi91/myhackernewsclone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dipankarmedhi91/myhackernewsclone/issues"
+  },
+  "homepage": "https://github.com/dipankarmedhi91/myhackernewsclone#readme",
+  "devDependencies": {
+    "tinyify": "^3.0.0"
+  },
+  "dependencies": {
+    "sassify": "^4.0.1"
+  }
+}

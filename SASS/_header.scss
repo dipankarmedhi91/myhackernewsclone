@@ -1,0 +1,23 @@
+@import 'variables';
+
+.headerBar{
+    background-color: $hncolor;
+    display: flex;
+    justify-content: space-between;
+
+    .maintitle{
+        font-weight: bold;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    img{
+        border: solid 1px white;
+        margin: 2px;
+    }
+    .leftContent{
+        display: flex;
+    }
+    .rightContent{
+        display: flex;
+    }
+}

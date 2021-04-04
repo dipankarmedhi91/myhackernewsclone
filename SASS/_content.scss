@@ -1,0 +1,31 @@
+@import "variables";
+
+.contentList{
+    padding: 5px;
+
+    .listItem{
+        margin: 5px;
+        display: flex;
+
+        .listNumber{
+            width: 1.7em;
+        }
+        .listContent{
+            display: flex;
+            flex-direction: column;
+
+            .listTitle{
+                font-size: 1em;
+            }
+            
+            .listFooter{
+                font-size: 0.8em;
+                color: $darkgrey;
+            }
+        }
+        
+    }
+    
+    
+}
+
